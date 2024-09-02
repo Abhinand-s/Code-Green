@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "186043428118",
+    "firebase_url": "https://code-green-92796-default-rtdb.firebaseio.com",
+    "project_id": "code-green-92796",
+    "storage_bucket": "code-green-92796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186043428118:android:076c75146374105c1f3437",
+        "android_client_info": {
+          "package_name": "com.example.code_green"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClBYt-NS6nkLZaLQG1UYKY2grJK0bVXE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
