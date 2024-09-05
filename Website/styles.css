@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e6f2e6;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    /* Full width container */
+    max-width: 1200px;
+    /* Max width for content inside container */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Adds space between navigation links */
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #32cd32;
+    /* Lime Green color */
+}
+
+header {
+    width: 100%;
+    /* Ensures the header spans the full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centers navigation links horizontally */
+    padding: 20px 0;
+    background-color: #2f4f4f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow for better separation */
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #32cd32;
+    /* Lime Green color */
+}
+
+.hero {
+    background-image: linear-gradient(120deg, #4caf50, #8bc34a);
+    color: white;
+    padding: 150px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('particles.png') repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #4caf50;
+    font-weight: bold;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2f4f4f;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #32cd32;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.features,
+.vision,
+.achievements,
+.product,
+.team,
+.contact,
+.testimonials {
+    background-color: #e6f2e6;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    font-size: 3em;
+    color: #32cd32;
+    margin-bottom: 15px;
+}
+
+.feature-item:hover {
+    background-color: #e6f2e6;
+    transform: scale(1.05);
+}
+
+.testimonials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    background-color: #f0f8f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: calc(50% - 40px);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,
+.contact textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #32cd32;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2e8b57;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2f4f4f;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.slide-up {
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
